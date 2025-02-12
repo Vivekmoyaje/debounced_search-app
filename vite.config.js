@@ -5,6 +5,6 @@ export default defineConfig({
     outDir: "build", // This makes sure Vite outputs to the 'build' folder
   },
 
-  base: "/machine-coding-tasks", // Add this line
+  base: "/debounced_search-app", // Add this line
   plugins: [tailwindcss()],
 });
