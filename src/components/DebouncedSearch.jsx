@@ -83,14 +83,14 @@ const DebouncedSearch = () => {
         <div className="mt-4">
           <div className="border p-5">
             <h2 className="text-2xl font-bold mb-2">{selectedRecipe.name} :</h2>
-            <div className="flex ">
+            <div className="grid-cols-1 md:grid grid-cols-2">
               <img
                 src={selectedRecipe.image}
                 width="500px"
                 className="mx-auto"
                 alt=""
               />
-              <div className="ps-10">
+              <div className="ps-0 md:ps-10">
                 <h1 className="text-center text-2xl font-bold mb-4 text-red-600">
                   Recipe :
                 </h1>
@@ -121,7 +121,7 @@ const DebouncedSearch = () => {
       <div className="mt-6">
         <h2 className="text-2xl font-bold mb-2">All Recipes:</h2>
         {allRecipes.length > 0 ? (
-          <div className="border grid grid-cols-3 gap-5 py-2 rounded-lg shadow bg-white w-full">
+          <div className="border  grid-cols-1 md:grid grid-cols-3 gap-5 py-2 rounded-lg shadow bg-white w-full">
             {allRecipes.map((recipe) => (
               <div key={recipe.id} className="p-2 border shadow-md rounded-md">
                 <p className="font-bold text-2xl my-2 text-center">
